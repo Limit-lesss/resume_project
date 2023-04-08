@@ -1,0 +1,872 @@
+ body {
+     margin: 0px;
+ }
+
+                                            /* HEADER */   
+ header {
+     background-image: linear-gradient(rgba(255, 255, 255, 0.31),rgba(4, 45, 65, 0.42)), url("business-g05bfc2353_1920.jpg");
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     background-attachment: fixed;
+     width: 100%;
+     height: 620px;
+     margin: 0px;
+ }
+
+ #nav {
+     padding: 10px;
+     /* position: fixed;
+     width: 100%;
+     z-index: 5;                                    /*   imp 
+     background-color: cyan; */
+ }
+.checkbtn{
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+#menu{
+    width: 40px;
+    height: 40px;
+}
+ #nav ul {
+     display: flex;
+     /* flex-direction: column; */
+     list-style-type: none;
+     justify-content: space-evenly;
+ }
+
+ #nav a {
+     text-decoration: none;
+     font-size: 25px;
+     font-weight: bolder;
+     color: rgb(1, 6, 11);
+ }
+
+ #nav a:hover {
+     color: rgb(130, 72, 230);
+     transition: color .4s;
+ }
+
+ .cool-link::after {
+                                     /*     imp     */
+     content: '';
+     display: block;
+     width: 0px;
+     height: 3px;
+     background: black;
+     transition: width .4s;
+ }
+
+ .cool-link:hover::after {
+     width: 100%;
+     transition: width .6s;
+ }
+
+ /* section{
+    display: flex;
+    flex-direction: column;
+ } */
+ section:nth-child(odd) {
+     background-color: rgb(255, 255, 255);
+ }
+
+ section:nth-child(even) {
+     background-color: rgba(67, 180, 224, 0.07);
+ }
+ #up-arrow-a{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 2;
+ }
+ #up-arrow{
+    width: 50px;
+    height: 60px;
+    margin-right: 15px;
+    /* visibility: hidden; */
+ }
+
+                                            /* ABOUT */
+ #about {
+     width: 100%;
+     height: auto;
+     min-height: 600px;
+     position: relative;
+ }
+
+ #links {
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     margin: auto;
+     position: relative;
+     top: -280px;
+ }
+
+ .social_media {
+     margin-left: 25px;
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+ }
+
+ .social_media:hover {
+     box-shadow: 0px 0px 10px 10px white;
+ }
+
+ #my_img {
+     display: block;
+     height: 280px;
+     width: 280px;
+     border-radius: 50%;
+     border: 2px solid rgb(255, 255, 255);
+     box-shadow: 0px 0px 10px 10px rgb(255, 255, 255);
+     margin: auto;
+     margin-top: -235px;
+     z-index: 10;
+ }
+
+ #name {
+     font-size: 50px;
+     color: #3f0d0d;
+     position: relative;
+     top: -300px;
+     width: 100%;
+     font-weight: bolder;
+     margin: 0px;
+     text-align: center;
+ }
+
+ #profile {
+     margin-top: 0px;
+ }
+
+ #summary {
+     position: absolute;
+     top: 50%;
+     left: 10%;
+     text-align: justify;
+     font-weight: 500;
+     font-size: 20px;
+     width: 80%;
+     margin: auto;
+     margin-top: -50px;
+     line-height: 1.9;
+     font-family: monospace;
+     height: auto;
+     max-height: 280px;
+     overflow: auto;
+     overflow-wrap: break-word;
+ }
+
+
+                                                /*  SKILLS   */
+
+ #skills {
+
+     height: auto;
+     min-height: 700px;
+     width: 100%;
+ }
+
+ #skill-header {
+     margin: auto;
+     display: flex;
+     justify-content: center;
+     margin-bottom: 60px;
+     width: 40%;
+     position: relative;
+     top: 30px;
+ }
+
+ #skill-header img {
+     margin-top: 10px;
+     width: 80px;
+ }
+
+ #skill-header h3 {
+     font-size: 35px;
+     margin: 40px 0px 0px 25px;
+     color: rgb(16, 66, 86);
+     /* margin-top: 40px; */
+ }
+
+ #skill-level {
+
+     margin: auto;
+     margin-top: 200px;
+     width: 70%;
+     height: auto;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+ }
+
+ .skill-level-inner {
+     width: 200px;
+     margin-bottom: 60px;
+     margin-top: 10px;
+ }
+
+ .indicator {
+     border-radius: 20px;
+     background-color: rgb(185, 190, 190);
+ }
+
+ #cpp , #java, #css, #html, #javascript , #nodejs, #python, #react{
+     background-color: rgb(98, 98, 198);
+     width: 90%;
+     border-radius: 20px 0px 0px 20px;
+     height: 30px;
+ }
+
+ #cpp p ,#java p, #css p, #html p, #javascript p, #nodejs p, #python p, #react p {
+     margin: 0px 0px 0px 15px;
+     font-size: 20px;
+     font-weight: bold;
+     position: relative;
+     top: 5px;
+ }
+
+ #java {
+     background-color: rgb(115, 173, 186);
+     width: 60%;
+     border-radius: 20px 0px 0px 20px;
+     height: 30px;
+ }
+
+ /* #java p {
+     margin: 0px 0px 0px 15px;
+     font-size: 20px;
+     font-weight: bold;
+     position: relative;
+     top: 5px;
+ } */
+
+ #python {
+     background-color: rgb(157, 95, 170);
+     width: 20%;
+     border-radius: 20px 0px 0px 20px;
+     height: 30px;
+ }
+
+ /* #python p {
+     margin: 0px 0px 0px 15px;
+     font-size: 20px;
+     font-weight: bold;
+     position: relative;
+     top: 5px;
+ } */
+
+ #javascript {
+     background-color: rgb(71, 136, 221);
+     width: 50%;
+     border-radius: 20px 0px 0px 20px;
+     height: 30px;
+ }
+
+ /* #javascript p {
+     margin: 0px 0px 0px 15px;
+     font-size: 20px;
+     font-weight: bold;
+     position: relative;
+     top: 5px;
+ } */
+
+ #html {
+     background-color: rgb(223, 184, 87);
+     width: 95%;
+     border-radius: 20px 0px 0px 20px;
+     height: 30px;
+ }
+
+ /* #html p {
+     margin: 0px 0px 0px 15px;
+     font-size: 20px;
+     font-weight: bold;
+     position: relative;
+     top: 5px;
+ } */
+
+ #css {
+     background-color: rgb(98, 98, 198);
+     width: 80%;
+     border-radius: 20px 0px 0px 20px;
+     height: 30px;
+ }
+/* 
+ #css p {
+     margin: 0px 0px 0px 15px;
+     font-size: 20px;
+     font-weight: bold;
+     position: relative;
+     top: 5px;
+ } */
+
+ #react {
+     background-color: rgb(198, 77, 95);
+     width: 70%;
+     border-radius: 20px 0px 0px 20px;
+     height: 30px;
+ }
+
+ /* #react p {
+     margin: 0px 0px 0px 15px;
+     font-size: 20px;
+     font-weight: bold;
+     position: relative;
+     top: 5px;
+ } */
+
+ #nodejs {
+     background-color: rgb(61, 124, 143);
+     width: 70%;
+     border-radius: 20px 0px 0px 20px;
+     height: 30px;
+ }
+
+ /* #nodejs p {
+     margin: 0px 0px 0px 15px;
+     font-size: 20px;
+     font-weight: bold;
+     position: relative;
+     top: 5px;
+ } */
+
+                                                 /* WORK EXPERIENCES */
+
+ #work-experience {
+     height:auto;
+     min-height: 800px;
+     margin-bottom: 80px;
+ }
+
+ #work-header {
+     margin: auto;
+     display: flex;
+     justify-content: center;
+     margin-bottom: 150px;
+     width: 60%;
+     position: relative;
+     top: 30px;
+ }
+
+ #work-header img {
+     margin-top: 10px;
+     width: 80px;
+     height: 80px;
+ }
+
+ #work-header h3 {
+     font-size: 35px;
+     margin: 40px 0px 0px 25px;
+     color: rgb(16, 66, 86);
+     /* margin-top: 40px; */
+ }
+ #timeline{
+    width: 90%;
+    margin: auto;
+    position: relative;
+ }
+ 
+ .timeline-box-outer{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+ }
+ .timeline-box-inner-first{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 44%;
+    text-align: end;
+    font-family: monospace;
+ }
+ .timeline-box-inner-first:nth-child(even){
+    display: flex;
+    flex-direction: column;
+    width: 44%;
+    text-align: start;
+    font-family: monospace;
+ }
+ .timeline-box-inner-first:nth-child(odd)::after{
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgb(205, 202, 220);
+    position: absolute;
+    right: -15.4%;
+    top: 16%;
+    z-index: 1;
+ }
+ .timeline-box-inner-first:nth-child(even)::after{
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgb(205, 202, 220);
+    position: absolute;
+    left: -14.9%;
+    top: 16%;
+    z-index: 1;
+ }
+ .timeline-box-inner-second{
+    width: 44%;
+ }
+ .timeline-box-inner-first h3{
+    margin:0px ;
+ }
+ .p1{
+    margin: 5px 0px 0px 0px;
+    color: orange;
+    font-size: 15px;
+ }
+ .p2{
+    margin: 0px 0px 0px 0px;
+    color: gray;
+ }
+ .description{
+    text-align: justify;
+    margin-top: 10px;
+    word-spacing: 0px;
+    font-size: 15px;
+ }
+ #timeline-divider{
+    position: absolute;
+    width: 0;
+    height: 90%;
+    top: 5%;
+    left: 50%;
+    border: 1px dashed rgb(16, 203, 203); 
+ }
+ #plane{
+    width: 50px;
+    height: 50px;
+    margin-left: -21px;
+ }
+ #timeline-traveller{
+    position: sticky;
+    top: 40%;
+    transform: rotate(135deg);
+    z-index: 2;
+ }
+ @media screen and (max-width:900px){
+    .timeline-box-inner-first:nth-child(even)::after{
+        left: 113%;
+        width: 10px;
+        height: 10px;
+    }
+    .timeline-box-inner-first:nth-child(odd)::after{
+        right: -15.4%;
+        width: 10px;
+        height: 10px;
+    }
+    .timeline-box-outer:nth-child(even){
+        flex-direction: row-reverse;
+        
+    }
+    .timeline-box-inner-first{
+        width: 80%;
+    }
+    .timeline-box-inner-first:nth-child(even){
+        width:80%;
+        align-items: end;
+    }
+    .timeline-box-inner-second{
+        width: 0%;
+    }
+    #timeline-divider{
+        left: 83%;
+    }
+    #plane{
+        width: 35px;
+        height: 35px;
+        margin-left: -15px;
+    }
+    #car{
+        width: 50px;
+        height: 50px;
+        margin-left: -25px;
+    }
+ }
+ @media screen and (max-width:600px){
+    .timeline-box-inner-first:nth-child(even)::after{
+        left: 112.5%;
+        width: 10px;
+        height: 10px;
+    }
+    .timeline-box-inner-first:nth-child(odd)::after{
+        right: -16.6%;
+        width: 10px;
+        height: 10px;
+    }
+ }
+
+                                                /* Education */
+ #education {
+    height: auto;
+    min-height: 900px;
+    padding-bottom: 75px;
+ }
+
+ #education-header {
+     margin: auto;
+     display: flex;
+     justify-content: center;
+     margin-bottom: 150px;
+     width: 60%;
+     position: relative;
+     top: 30px;
+ }
+
+ #education-header img {
+     margin-top: 10px;
+     width: 80px;
+     height: 80px;
+ }
+
+ #education-header h3 {
+     font-size: 35px;
+     margin: 40px 0px 0px 25px;
+     color: rgb(16, 66, 86);
+ }
+#education-journey{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+#education-journey h3{
+    color: rgb(5, 73, 151);
+}
+#education-journey .p1{
+    color: #15a59e;
+    overflow-wrap: break-word;
+}
+#education-journey .p2{
+    color: #8b3939;
+}
+#timeline-traveller-car{
+    position: sticky;
+    top: 55%;
+    transform: rotate(0deg);
+    z-index: 2;
+}
+#car{
+    width: 70px;
+    height: 80px;
+    margin: -6px 0px -10px -35px;
+}
+ 
+
+                                                    /* PORTFOLIO */
+ #portfolio {
+     height: auto;
+     min-height: 800px;
+     margin-top: 20px;
+ }
+
+ #portfolio-header {
+     margin: auto;
+     display: flex;
+     justify-content: center;
+     margin-bottom: 60px;
+     width: 60%;
+     position: relative;
+     top: 30px;
+ }
+
+ #portfolio-header img {
+     margin-top: 10px;
+     width: 80px;
+     height: 80px;
+ }
+
+ #portfolio-header h3 {
+     font-size: 35px;
+     margin: 40px 0px 0px 25px;
+     color: rgb(16, 66, 86);
+     /* margin-top: 40px; */
+ }
+
+ #portfolio-data {
+     /* background-color: #3f0d0d; */
+     width: 60%;
+     height: auto;
+     min-height: 600px;
+     margin: auto;
+     margin-top: 120px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+ }
+
+ #portfolio-data img {
+     width: 300px;
+     height: 200px;
+     border-radius: 0px 30px;
+ }
+
+ #portfolio-data .portfolio-data-inside {
+     width: 300px;
+     height: 200px;
+     border-radius: 0px 30px;
+     margin-bottom: 20px;
+ }
+
+ #portfolio-data div:hover {
+     box-shadow: 0px 0px 20px 2px rgb(71, 65, 65);
+ }
+
+ .portfolio-data-inside p {
+     position: relative;
+     top: -225px;
+     color: white;
+     margin-left: 20px;
+     font-size: 20px;
+     font-weight: bold;
+     visibility: hidden;
+     width: 80%;
+ }
+
+ .portfolio-data-inside:nth-of-type(2) p {
+     margin-top: 30px;
+     color: #6078f8;
+ }
+
+ .portfolio-data-inside:nth-of-type(3) p {
+     margin-left: 20px;
+     color: #ffffff;
+ }
+
+ .portfolio-data-inside:hover p {
+     visibility: visible;
+     text-decoration: underline;
+ }
+
+                                                        /* contact */
+ #contact {
+     height: auto;
+     min-height: 600px;
+     background: linear-gradient(rgb(21, 160, 215),#05658c,#110b31);
+     color: rgba(255, 255, 255, 0.701);
+ }
+
+ #contact-header {
+     margin:auto;
+     display: flex;
+     justify-content: center;
+     margin-bottom: 60px;
+     width: 60%;
+     position: relative;
+     top: 30px;
+ }
+
+ #contact-header img {
+     margin-top: 10px;
+     width: 80px;
+     height: 80px;
+ }
+
+ #contact-header h3 {
+     font-size: 35px;
+     margin: 40px 0px 0px 25px;
+     color: rgb(255, 255, 255,.7);
+     /* margin-top: 40px; */
+ }
+
+ #contact-data {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     width: 80%;
+     height: auto;
+     margin: auto;
+     margin-top: 100px;
+ }
+
+ #contact-data #div1 {
+     width: 400px;
+     height: 400px;
+     text-align: center;
+ }
+
+ #contact-data #div2 {
+     width: 400px;
+     height: 400px;
+ }
+
+ #form input,
+ textarea {
+     border-top: none;
+     border-right: none;
+     border-left: none;
+     border-bottom: 2px solid black;
+     background-color: rgba(255, 255, 255, 0);
+     margin-bottom: 20px;
+     font-size: 20px;
+     width: 300px;
+     outline: none;
+                                         /* imp */
+     padding: 10px;
+     color: white;
+     font-family: monospace;
+ }
+
+ input::placeholder,
+ textarea::placeholder {
+                                        /* imp */
+     color: rgb(255, 255, 255);
+ }
+
+ #form textarea {
+     height: 69px;
+ }
+
+ button {
+     margin-top: 50px;
+     background-color: rgb(134, 119, 226);
+     border: none;
+     font-size: 20px;
+     font-weight: 500;
+     border-radius: 5px;
+     padding: 10px;
+     transition: background-color .2s;
+     cursor: pointer;
+ }
+
+ button:hover {
+     box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.278);
+ }
+button:active{
+    background-color: white;
+    transition: background-color .2s;
+}
+ #div2 {
+     text-align: left;
+ }
+
+ #div2 h3 {
+     font-size: 25px;
+     font-weight: bolder;
+ }
+
+ #div2 p {
+     font-size: 20px;
+ }
+
+ #div2 #img2,
+ #img3 {
+     width: 18px;
+     height: 18px;
+ }
+#div3{
+    width:100%;
+}
+ #contact-link {
+     margin: auto;
+     display: flex;
+     width: 70%;
+     justify-content: center;
+ }
+
+                                     /* media query */
+                                     
+@media screen and (max-width:900px){
+    #name{
+        font-size: 35px;
+    }
+  
+    #education-header img, #contact-header img, #work-header img, #portfolio-header img, #skill-header img{
+        /* margin-top: 10px; */
+        width: 50px;
+        height: 50px;
+    }
+   
+    #education-header h3 , #work-header h3 , #contact-header h3, #portfolio-header h3, #skill-header h3{
+        font-size: 25px;
+        margin-top: 35px;
+        /* margin: 40px 0px 0px 25px;
+        color: rgb(16, 66, 86); */
+    }
+  
+    #up-arrow{
+        width: 40px;
+        height: 50px;
+     }
+     #nav ul{
+        flex-direction: column;
+        align-items: start;
+        position: relative;
+        left: -100%;
+        transition: all .8s;
+     }
+     #nav ul li{
+        margin-bottom: 15px;
+     }
+     #nav ul li a{
+        font-size: 23px; 
+     }
+     .checkbtn{
+        display:block;
+     }
+     #check:checked ~ ul{       /* sibling selector ~ */
+        left:0px;
+     }
+     #form input,textarea , button{
+        font-size: 16px;
+     }
+     #summary{
+        font-size: 15px;
+     }
+     #my_img{
+        width: 220px;
+        height: 220px;
+     }
+     #up-arrow{
+        width: 30px;
+        height: 40px;
+        margin-right: 0px;
+     }
+     #up-arrow-a{
+        right: 10px;
+     }
+}
+@media screen and (max-width:600px){
+    #name{
+        font-size: 30px;
+    }
+    
+  
+    #up-arrow{
+        width: 30px;
+        height: 40px;
+        margin-right: 0px;
+     }
+     #up-arrow-a{
+        right: 2px;
+     }
+     #nav ul li a{
+        font-size: 20px; 
+     }
+     #form input,textarea {
+      width: 200px;
+     }
+     #div2 h3 {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+   
+    #div2 p {
+        font-size: 18px;
+    }
+}

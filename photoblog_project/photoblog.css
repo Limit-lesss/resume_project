@@ -1,0 +1,34 @@
+body{
+       background-color: rgb(2, 29, 59);
+}
+h2{
+       color: cyan;
+       margin-left: calc(9%/6);
+       border-bottom: 3px solid cyan;
+       width: 30%;
+       padding: 20px 0;
+}
+
+img{
+       width: 30%;
+       height: 400px;
+       margin: calc(10%/6);
+       border-radius: 20% 0;
+       margin-top: 50px;
+       transition: box-shadow .5s;
+}
+.watch img{
+       
+       border-radius: 20% 0;
+}
+img:hover{
+       box-shadow: 10px 10px 15px 10px rgb(181, 205, 60);
+}
+.bg{
+       border-radius: 30% 70% 25% 30% / 30% 30% 70% 70% ;
+       background-color: cyan;
+       
+}
+.bg:hover{
+       box-shadow: none;
+}
